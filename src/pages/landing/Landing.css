@@ -1,0 +1,14 @@
+.landing-container {
+     
+}
+
+.landing-container > .netflix-logo {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    width: 100px;
+}
+
+.landing-container > .netflix-logo:hover {
+    cursor: pointer;
+}
