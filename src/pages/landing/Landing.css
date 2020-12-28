@@ -1,66 +1,66 @@
 .landing-container {
-     font-family: Roboto;
+    font-family: Roboto;
 }
 
 .landing-container > .netflix-logo {
-    position: absolute;
-    left: 40px;
-    top: 20px;
-    width: 100px;
+   position: absolute;
+   left: 40px;
+   top: 20px;
+   width: 100px;
 }
 
 .landing-container > .netflix-logo:hover {
-    cursor: pointer;
+   cursor: pointer;
 }
 
 .landing-container > .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 100vh;
 }
 
 .landing-container > .content > .title {
-    color: white;
-    font-family: inherit;
-    font-size: 64px;
+   color: white;
+   font-family: inherit;
+   font-size: 64px;
 
-    user-select: none;
+   user-select: none;
 }
 
 .landing-container > .content > .profiles {
-    display: flex;
+   display: flex;
 }
 
 .landing-container > .content > .profiles > .profile {
-    display: flex;
-    flex-direction: column;
-    margin: 0 20px;
-    margin-top: 40px;
-    margin-bottom: 80px;
+   display: flex;
+   flex-direction: column;
+   margin: 0 20px;
+   margin-top: 40px;
+   margin-bottom: 80px;
 
 }
 
 .landing-container > .content > .profiles > .profile:first-child {
-    margin-left: 0;
+   margin-left: 0;
 }
 .landing-container > .content > .profiles > .profile:last-child {
-    margin-right: 0;
+   margin-right: 0;
 }
 .landing-container > .content > .profiles > .profile:hover > .image {
-    border: 3px solid white;
+   border: 3px solid white;
 }
 
 .landing-container > .content > .profiles > .profile > .image {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 15px;
-    border: 5px solid transparent;
+   width: 200px;
+   height: 200px;
+   margin-bottom: 15px;
+   border: 5px solid transparent;
 }
 
 .landing-container > .content > .profiles > .profile:hover {
-    cursor: pointer;
+   cursor: pointer;
 }
 
 .landing-container > .content > .profiles > .profile:hover > .username {
@@ -69,7 +69,7 @@ color: white;
 
 
 .landing-container  > .content > .profiles > .profile > .username {
-    color: var(--grey-color);
-    text-align: center;
-    font-size: 24px;
+   color: var(--grey-color);
+   text-align: center;
+   font-size: 24px;
 }
