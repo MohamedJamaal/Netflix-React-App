@@ -8,7 +8,7 @@ interface Props {
 }
 
 export default function Profiles({onProfileClick}: Props) { // from landing.tsx state
-    return <div className="content">
+    return <div className="profiles-container">
     <span className="title"> Who's Watching ?</span>
     <div className="profiles">
         {profiles.map(( profile, index ) => (

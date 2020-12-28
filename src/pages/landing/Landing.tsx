@@ -5,6 +5,7 @@ import './Landing.css'
 import {Profile as ProfileModel} from '../../models/profiles/Profile'
 import Profiles from '../profiles/Profiles'
 import Browse from '../browse/Browse'
+import Navbar from '../../components/navbar/Navbar'
 
 export default function Landing() {
 
@@ -16,7 +17,7 @@ export default function Landing() {
 
     return (
         <div className="landing-container">
-            <img className="netflix-logo" alt="" src="assets/images/netflix-logo.svg" />
+            <Navbar />
             {user === undefined ?
                 <Profiles onProfileClick={onProfileClick} /> : <Browse /> } 
 
