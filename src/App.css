@@ -3,3 +3,7 @@
 :root {
     --grey-color: rgb(120, 120, 120);
 }
+
+.spacer {
+    flex: 1;
+}

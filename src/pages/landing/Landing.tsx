@@ -17,7 +17,9 @@ export default function Landing() {
 
     return (
         <div className="landing-container">
-            <Navbar />
+            <Navbar
+                only_logo={user === undefined}
+                porfile_url={user?.image_src} />
             {user === undefined ?
                 <Profiles onProfileClick={onProfileClick} /> : <Browse /> } 
 
