@@ -6,6 +6,8 @@
 
     /* to hide images over the page  */
     overflow: hidden;
+
+    scroll-behavior: smooth;
 }
 
 .movie-list-container .movies .movie {
@@ -18,7 +20,38 @@
 
 .movie-list-container .movies section{
     display: grid;
-
+    position: relative;
     /* to display 5 images then other 5 */
     grid-template-columns: repeat(5, auto);
+}
+
+.movie-list-container .movies section .previous {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.movie-list-container .movies section .next {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.movie-list-container .movies section .previous {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
+}
+.movie-list-container .movies section .next {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.4), transparent);
+}
+
+.movie-list-container .movies section .next svg,
+.movie-list-container .movies section .previous svg {
+    color: white;
+    font-size: 48px;
 }
