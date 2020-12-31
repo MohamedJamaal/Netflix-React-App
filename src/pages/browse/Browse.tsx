@@ -1,5 +1,6 @@
 import React from 'react' 
 import Button from '../../components/button/Button'
+import MovieList from '../../components/movieList/MovieList'
 import './Browse.css'
 
 export default function Browse() {
@@ -19,6 +20,7 @@ export default function Browse() {
                     </div>
                 </div>
             </div>
+            <MovieList />
         </div>
     );
 }

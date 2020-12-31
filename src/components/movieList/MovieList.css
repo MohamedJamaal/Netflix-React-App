@@ -1,0 +1,24 @@
+.movie-list-container .movies {
+    display: grid;
+
+    /* to display images in width of page  */
+    grid-template-columns: repeat(2, 100%);
+
+    /* to hide images over the page  */
+    overflow: hidden;
+}
+
+.movie-list-container .movies .movie {
+    /* width: 320px; */
+    height: 180px;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.movie-list-container .movies section{
+    display: grid;
+
+    /* to display 5 images then other 5 */
+    grid-template-columns: repeat(5, auto);
+}
