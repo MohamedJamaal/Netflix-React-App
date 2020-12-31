@@ -1,4 +1,22 @@
-.button-container {
+/* primary button style  */
+.primary-button {
+    background-color: white;
+    transition: background 200ms linear;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+
+    font-size: 24px;
+    font-weight: 500;
+    font-family: inherit;
+}
+
+.primary-button:hover{
+    background-color: rgb(200, 200, 200);
+}
+
+/* Secondary button style */
+.secondary-ghost-button {
     font-size: 24px;
     color: var(--grey-color);
     background: none;
@@ -7,8 +25,28 @@
     letter-spacing: 1.5px;
 }
 
-.button-container:hover {
+.secondary-ghost-button:hover {
     border: 1px solid white;
     color: white;
+}
+
+.secondary-button {
+    transition: background 200ms linear;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: inherit;
+    color: white;
+    background: rgba(120,  120, 120, 0.5);
+    border-radius: 3px;
+    border: none;
+    padding: 10px 40px;
+}
+
+.secondary-button:hover{
+    background: rgba(50,50,50, 0.5);
+
+}
+/* default button style  */
+.button-container:hover {
     cursor: pointer;
 }

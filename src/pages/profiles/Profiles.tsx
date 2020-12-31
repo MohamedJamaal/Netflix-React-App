@@ -18,6 +18,6 @@ export default function Profiles({onProfileClick}: Props) { // from landing.tsx 
         </div>
         ))}
     </div>
-    <Button label="MANAGE PROFILES" />
+    <Button ghost secondary label="MANAGE PROFILES" />
 </div>
 }
