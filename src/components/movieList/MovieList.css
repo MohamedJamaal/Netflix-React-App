@@ -1,3 +1,13 @@
+.movie-list-container {
+    margin-top: -100px;
+    position: relative;
+}
+
+.movie-list-container > .title {
+    font-size: 24px;
+    padding-left: 80px;
+}
+
 .movie-list-container .movies {
     display: grid;
 
@@ -11,21 +21,43 @@
 }
 
 .movie-list-container .movies .movie {
+    position: relative;
     /* width: 320px; */
     height: 180px;
+    margin: 0px 2px;
+    transition: transform 200ms ease-in-out, margin 200ms ease-in-out;
 
     background-size: cover;
     background-position: center;
 }
 
+.movie-list-container .movies .movie .title {
+    position: absolute;
+    left: 20px;
+    bottom: 60px;
+    opacity: 0;
+}
+
+.movie-list-container .movies .movie:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    margin: 0px 40px;
+}
+
+.movie-list-container .movies .movie:hover .title {
+    opacity: 1;
+}
+
 .movie-list-container .movies section{
     display: grid;
     position: relative;
+    margin: 40px 0px;
     /* to display 5 images then other 5 */
     grid-template-columns: repeat(5, auto);
 }
 
 .movie-list-container .movies section .previous {
+    z-index: 1;
     position: absolute;
     display: flex;
     align-items: center;
@@ -35,6 +67,7 @@
 }
 
 .movie-list-container .movies section .next {
+    z-index: 1;
     position: absolute;
     display: flex;
     align-items: center;
